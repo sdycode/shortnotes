@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -26,34 +27,59 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="notess">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
+  <meta name="google-signin-client_id"
+    content="369790879349-afngo1pims530nbq8sn5jfj2bgr5pdgv.apps.googleusercontent.com">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>notess</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1344185842';
+    var serviceWorkerVersion = '3167822070';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+
 <body>
+ 
+
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         }
-      }).then(function(engineInitializer) {
+      }).then(function (engineInitializer) {
         return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
+      }).then(function (appRunner) {
         return appRunner.runApp();
       });
     });
   </script>
 </body>
+
 </html>
+<!-- 
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+<script>
+  import { initializeApp } from "firebase/app";
+  var firebaseConfig = {
+    apiKey: 'AIzaSyDGFLVoIx1BJwWEDPYPfBqtuqkRH1FbGEY',
+    appId: '1:369790879349:web:765197b40bba88b9c15a3c',
+    messagingSenderId: '369790879349',
+    projectId: 'flutter-notes-595a2',
+    authDomain: 'flutter-notes-595a2.firebaseapp.com',
+    databaseURL: 'https://flutter-notes-595a2-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'flutter-notes-595a2.appspot.com',
+    measurementId: 'G-FEHPQMMQ5F',
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script> -->
